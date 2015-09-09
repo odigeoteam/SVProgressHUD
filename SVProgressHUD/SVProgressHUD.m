@@ -956,6 +956,10 @@ static const CGFloat SVProgressHUDUndefinedProgress = -1;
 
 
 - (CGFloat)visibleKeyboardHeight {
+    
+    // We want always to show the HUD screen centered.
+    return 0;
+    
 #if !defined(SV_APP_EXTENSIONS)
     UIWindow *keyboardWindow = nil;
     for (UIWindow *testWindow in [[UIApplication sharedApplication] windows]) {
